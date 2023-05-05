@@ -1,11 +1,18 @@
-'use strict'
+'use strict';
 
-let N = prompt("Enter the number:");
+let userNumber = Number(prompt("Enter the number:"));
 let count = 0;
-
-    for(let i=1; i<= N; i++){
-        if(i>=0 && i%5 === 0){
-            count++
-        }
+if (Number.isNaN(userNumber)){
+    console.log('Entered wrong information')
+}else{
+    for(let i = 1; i <= userNumber; i++){
+        if(i % 5 === 0){
+            count++;
+        }  
     }
-console.log(count)
+console.log(`Amount number which devide on 5 is ${count}`);
+}
+
+   
+
+        
